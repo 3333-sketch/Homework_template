@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>Roly-poly toy Dynamic Balance</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #fefefe;
+      }
+      
+      body {
+        touch-action: none;
+        overscroll-behavior: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+      }
+      canvas {
+        touch-action: none;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("touchmove", function (e) { e.preventDefault(); }, { passive: false });
+    </script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
